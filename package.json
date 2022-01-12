@@ -1,0 +1,41 @@
+{
+	"name": "micropatch",
+	"version": "1.0.0",
+	"description": "Microdiff compatible object and array patching",
+	"main": "./dist/index.cjs",
+	"module": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		"import": "./dist/index.js",
+		"require": "./dist/index.cjs",
+		"default": "./dist/index.js"
+	},
+	"scripts": {
+		"build": "tsc --module CommonJS && cd dist && mv \"index.js\" \"index.cjs\" && cd ../ && tsc --module es2020  && npx prettier -w dist/* --loglevel warn",
+		"test": "npm run build && uvu tests",
+		"prepublish": "npm run build"
+	},
+	"keywords": [
+		"diff",
+		"comparison"
+	],
+	"author": "AsyncBanana",
+	"license": "MIT",
+	"files": [
+		"dist"
+	],
+	"devDependencies": {
+		"microdiff": "^1.3.0",
+		"picocolors": "^1.0.0",
+		"prettier": "^2.4.1",
+		"typescript": "^4.4.4",
+		"uvu": "^0.5.2"
+	},
+	"type": "module",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/AsyncBanana/micropatch"
+	},
+	"homepage": "https://github.com/AsyncBanana/micropatch#readme",
+	"bugs": "https://github.com/AsyncBanana/micropatch/issues"
+}
