@@ -2,7 +2,7 @@
 
 ![Micropatch Logo](https://raw.githubusercontent.com/AsyncBanana/micropatch/master/Logo.svg)
 
-Micropatch is a ![Microdiff](https://github.com/AsyncBanana/microdiff) compatible patching library that is small (<1kb minified) and simple to use.
+Micropatch is a [Microdiff](https://github.com/AsyncBanana/microdiff) compatible patching library that is small (<1kb minified) and simple to use.
 
 ![Minizipped Size (from Bundlephobia)](https://img.shields.io/bundlephobia/minzip/micropatch?style=flat-square) ![License](https://img.shields.io/npm/l/micropatch?style=flat-square) ![dependency Count](https://img.shields.io/badge/dependencies-0-green?style=flat-square)
 
