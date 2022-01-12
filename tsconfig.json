@@ -1,5 +1,5 @@
 {
-	"files": ["index_old.tsd.ts"],
+	"files": ["index.ts"],
 	"buildOptions": {},
 	"compilerOptions": {
 		"outDir": "dist",
